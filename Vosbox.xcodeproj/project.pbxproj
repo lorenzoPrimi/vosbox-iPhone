@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED04DD1E1532549900E750BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04DD1D1532549900E750BE /* UIKit.framework */; };
+		ED04DD201532549900E750BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04DD1F1532549900E750BE /* Foundation.framework */; };
+		ED04DD221532549900E750BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04DD211532549900E750BE /* CoreGraphics.framework */; };
+		ED04DD281532549900E750BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED04DD261532549900E750BE /* InfoPlist.strings */; };
+		ED04DD2A1532549900E750BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04DD291532549900E750BE /* main.m */; };
+		ED04DD2E1532549900E750BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04DD2D1532549900E750BE /* AppDelegate.m */; };
+		ED04DD311532549900E750BE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04DD2F1532549900E750BE /* MainStoryboard_iPhone.storyboard */; };
+		ED04DD341532549900E750BE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04DD321532549900E750BE /* MainStoryboard_iPad.storyboard */; };
+		ED04DD371532549900E750BE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04DD361532549900E750BE /* FirstViewController.m */; };
+		ED04DD3E1532549900E750BE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04DD3D1532549900E750BE /* SecondViewController.m */; };
+		ED04DD80153257BE00E750BE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ED04DD7F153257BD00E750BE /* Settings.bundle */; };
+		ED0C397A153F29B6000336BC /* playlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED0C3977153F29B6000336BC /* playlist.plist */; };
+		ED0C39BA153F8809000336BC /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0C39B8153F8809000336BC /* PlayerViewController.m */; };
+		ED0C39D515401A2A000336BC /* BarComposers.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0C39CE15401A2A000336BC /* BarComposers.png */; };
+		ED0C39D615401A2A000336BC /* BarPlaylists.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0C39CF15401A2A000336BC /* BarPlaylists.png */; };
+		ED5A349C15878E8100F87C99 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5A349B15878E8100F87C99 /* NSString+MD5.m */; };
+		ED623323159A395E006BA4FF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED623322159A395E006BA4FF /* Icon@2x.png */; };
+		ED623325159A3960006BA4FF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED623324159A3960006BA4FF /* Icon.png */; };
+		ED9525FF155AD824002F499A /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9525F7155AD824002F499A /* forward.png */; };
+		ED952601155AD824002F499A /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9525F9155AD824002F499A /* pause.png */; };
+		ED952603155AD824002F499A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9525FB155AD824002F499A /* play.png */; };
+		ED952605155AD824002F499A /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9525FD155AD824002F499A /* rewind.png */; };
+		ED9B1374153B05BC0075316B /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B1373153B05BC0075316B /* PlaylistViewController.m */; };
+		EDA115211572A59700CE6688 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA115201572A59700CE6688 /* tick.png */; };
+		EDA65D11156175C100D06DD4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA65D0E156175C100D06DD4 /* AudioToolbox.framework */; };
+		EDA65D12156175C100D06DD4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA65D0F156175C100D06DD4 /* CFNetwork.framework */; };
+		EDA65D13156175C100D06DD4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA65D10156175C100D06DD4 /* MediaPlayer.framework */; };
+		EDA65D191561868D00D06DD4 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA65D181561868C00D06DD4 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDA65D1D156260FE00D06DD4 /* no_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA65D1C156260FE00D06DD4 /* no_cover.png */; };
+		EDAB3C9A1561533000C56B4A /* no_cover_320.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAB3C991561533000C56B4A /* no_cover_320.png */; };
+		EDAB3C9D156156CE00C56B4A /* volume_down.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAB3C9B156156CE00C56B4A /* volume_down.png */; };
+		EDAB3C9E156156CE00C56B4A /* volume_up.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAB3C9C156156CE00C56B4A /* volume_up.png */; };
+		EDC986101563064400F4B74A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC986121563064400F4B74A /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED04DD191532549900E750BE /* Vosbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vosbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED04DD1D1532549900E750BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ED04DD1F1532549900E750BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED04DD211532549900E750BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED04DD251532549900E750BE /* Vosbox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Vosbox-Info.plist"; sourceTree = "<group>"; };
+		ED04DD271532549900E750BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED04DD291532549900E750BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED04DD2B1532549900E750BE /* Vosbox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vosbox-Prefix.pch"; sourceTree = "<group>"; };
+		ED04DD2C1532549900E750BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED04DD2D1532549900E750BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED04DD301532549900E750BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		ED04DD331532549900E750BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		ED04DD351532549900E750BE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		ED04DD361532549900E750BE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		ED04DD3C1532549900E750BE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		ED04DD3D1532549900E750BE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		ED04DD7F153257BD00E750BE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		ED0C3977153F29B6000336BC /* playlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = playlist.plist; sourceTree = "<group>"; };
+		ED0C39B7153F8809000336BC /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		ED0C39B8153F8809000336BC /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		ED0C39B9153F8809000336BC /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = "<group>"; };
+		ED0C39CE15401A2A000336BC /* BarComposers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarComposers.png; sourceTree = "<group>"; };
+		ED0C39CF15401A2A000336BC /* BarPlaylists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarPlaylists.png; sourceTree = "<group>"; };
+		ED5A349A15878E8100F87C99 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		ED5A349B15878E8100F87C99 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		ED623322159A395E006BA4FF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Icon@2x.png"; sourceTree = "<group>"; };
+		ED623324159A3960006BA4FF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../Icon.png; sourceTree = "<group>"; };
+		ED9525F7155AD824002F499A /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		ED9525F9155AD824002F499A /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		ED9525FB155AD824002F499A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		ED9525FD155AD824002F499A /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
+		ED9B1372153B05BC0075316B /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		ED9B1373153B05BC0075316B /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		EDA115201572A59700CE6688 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		EDA65D0E156175C100D06DD4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EDA65D0F156175C100D06DD4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EDA65D10156175C100D06DD4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EDA65D171561868C00D06DD4 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		EDA65D181561868C00D06DD4 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		EDA65D1C156260FE00D06DD4 /* no_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_cover.png; sourceTree = "<group>"; };
+		EDAB3C991561533000C56B4A /* no_cover_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_cover_320.png; sourceTree = "<group>"; };
+		EDAB3C9B156156CE00C56B4A /* volume_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_down.png; sourceTree = "<group>"; };
+		EDAB3C9C156156CE00C56B4A /* volume_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_up.png; sourceTree = "<group>"; };
+		EDC986111563064400F4B74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EDC9861915630E1500F4B74A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = /Users/lorenzo/Documents/Projects/Vosbox/it.lproj/Localizable.strings; sourceTree = "<absolute>"; };
+		EDC9861A15630E1500F4B74A /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = /Users/lorenzo/Documents/Projects/Vosbox/Vosbox/it.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<absolute>"; };
+		EDC9861B15630E1500F4B74A /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = /Users/lorenzo/Documents/Projects/Vosbox/Vosbox/it.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
+		EDC9861C15630E1500F4B74A /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = /Users/lorenzo/Documents/Projects/Vosbox/Vosbox/it.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED04DD161532549900E750BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED04DD1E1532549900E750BE /* UIKit.framework in Frameworks */,
+				ED04DD201532549900E750BE /* Foundation.framework in Frameworks */,
+				ED04DD221532549900E750BE /* CoreGraphics.framework in Frameworks */,
+				EDA65D11156175C100D06DD4 /* AudioToolbox.framework in Frameworks */,
+				EDA65D12156175C100D06DD4 /* CFNetwork.framework in Frameworks */,
+				EDA65D13156175C100D06DD4 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED04DD0E1532549900E750BE = {
+			isa = PBXGroup;
+			children = (
+				ED04DD231532549900E750BE /* Vosbox */,
+				ED04DD1C1532549900E750BE /* Frameworks */,
+				ED04DD1A1532549900E750BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED04DD1A1532549900E750BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED04DD191532549900E750BE /* Vosbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED04DD1C1532549900E750BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDA65D0E156175C100D06DD4 /* AudioToolbox.framework */,
+				EDA65D0F156175C100D06DD4 /* CFNetwork.framework */,
+				EDA65D10156175C100D06DD4 /* MediaPlayer.framework */,
+				ED04DD1D1532549900E750BE /* UIKit.framework */,
+				ED04DD1F1532549900E750BE /* Foundation.framework */,
+				ED04DD211532549900E750BE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED04DD231532549900E750BE /* Vosbox */ = {
+			isa = PBXGroup;
+			children = (
+				ED04DD4C153254EB00E750BE /* Images */,
+				ED04DD2C1532549900E750BE /* AppDelegate.h */,
+				ED04DD2D1532549900E750BE /* AppDelegate.m */,
+				EDA65D171561868C00D06DD4 /* AudioStreamer.h */,
+				EDA65D181561868C00D06DD4 /* AudioStreamer.m */,
+				ED04DD2F1532549900E750BE /* MainStoryboard_iPhone.storyboard */,
+				ED04DD321532549900E750BE /* MainStoryboard_iPad.storyboard */,
+				ED04DD351532549900E750BE /* FirstViewController.h */,
+				ED04DD361532549900E750BE /* FirstViewController.m */,
+				ED04DD3C1532549900E750BE /* SecondViewController.h */,
+				ED04DD3D1532549900E750BE /* SecondViewController.m */,
+				ED9B1372153B05BC0075316B /* PlaylistViewController.h */,
+				ED9B1373153B05BC0075316B /* PlaylistViewController.m */,
+				ED0C3977153F29B6000336BC /* playlist.plist */,
+				ED0C39B7153F8809000336BC /* PlayerViewController.h */,
+				ED0C39B8153F8809000336BC /* PlayerViewController.m */,
+				ED5A349A15878E8100F87C99 /* NSString+MD5.h */,
+				ED5A349B15878E8100F87C99 /* NSString+MD5.m */,
+				ED0C39B9153F8809000336BC /* WebServiceManager.h */,
+				EDC986121563064400F4B74A /* Localizable.strings */,
+				ED04DD7F153257BD00E750BE /* Settings.bundle */,
+				ED04DD241532549900E750BE /* Supporting Files */,
+			);
+			path = Vosbox;
+			sourceTree = "<group>";
+		};
+		ED04DD241532549900E750BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED04DD251532549900E750BE /* Vosbox-Info.plist */,
+				ED04DD261532549900E750BE /* InfoPlist.strings */,
+				ED04DD291532549900E750BE /* main.m */,
+				ED04DD2B1532549900E750BE /* Vosbox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED04DD4C153254EB00E750BE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED623324159A3960006BA4FF /* Icon.png */,
+				ED623322159A395E006BA4FF /* Icon@2x.png */,
+				EDA115201572A59700CE6688 /* tick.png */,
+				EDAB3C9B156156CE00C56B4A /* volume_down.png */,
+				EDAB3C9C156156CE00C56B4A /* volume_up.png */,
+				EDA65D1C156260FE00D06DD4 /* no_cover.png */,
+				EDAB3C991561533000C56B4A /* no_cover_320.png */,
+				ED9525F7155AD824002F499A /* forward.png */,
+				ED9525F9155AD824002F499A /* pause.png */,
+				ED9525FB155AD824002F499A /* play.png */,
+				ED9525FD155AD824002F499A /* rewind.png */,
+				ED0C39CE15401A2A000336BC /* BarComposers.png */,
+				ED0C39CF15401A2A000336BC /* BarPlaylists.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED04DD181532549900E750BE /* Vosbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED04DD451532549900E750BE /* Build configuration list for PBXNativeTarget "Vosbox" */;
+			buildPhases = (
+				ED04DD151532549900E750BE /* Sources */,
+				ED04DD161532549900E750BE /* Frameworks */,
+				ED04DD171532549900E750BE /* Resources */,
+				EDC9861D15630FC100F4B74A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vosbox;
+			productName = Vosbox;
+			productReference = ED04DD191532549900E750BE /* Vosbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED04DD101532549900E750BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Vosbox;
+			};
+			buildConfigurationList = ED04DD131532549900E750BE /* Build configuration list for PBXProject "Vosbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				it,
+				de,
+			);
+			mainGroup = ED04DD0E1532549900E750BE;
+			productRefGroup = ED04DD1A1532549900E750BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED04DD181532549900E750BE /* Vosbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED04DD171532549900E750BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED04DD281532549900E750BE /* InfoPlist.strings in Resources */,
+				ED04DD311532549900E750BE /* MainStoryboard_iPhone.storyboard in Resources */,
+				ED04DD341532549900E750BE /* MainStoryboard_iPad.storyboard in Resources */,
+				ED04DD80153257BE00E750BE /* Settings.bundle in Resources */,
+				ED0C397A153F29B6000336BC /* playlist.plist in Resources */,
+				ED0C39D515401A2A000336BC /* BarComposers.png in Resources */,
+				ED0C39D615401A2A000336BC /* BarPlaylists.png in Resources */,
+				ED9525FF155AD824002F499A /* forward.png in Resources */,
+				ED952601155AD824002F499A /* pause.png in Resources */,
+				ED952603155AD824002F499A /* play.png in Resources */,
+				ED952605155AD824002F499A /* rewind.png in Resources */,
+				EDAB3C9A1561533000C56B4A /* no_cover_320.png in Resources */,
+				EDAB3C9D156156CE00C56B4A /* volume_down.png in Resources */,
+				EDAB3C9E156156CE00C56B4A /* volume_up.png in Resources */,
+				EDA65D1D156260FE00D06DD4 /* no_cover.png in Resources */,
+				EDC986101563064400F4B74A /* Localizable.strings in Resources */,
+				EDA115211572A59700CE6688 /* tick.png in Resources */,
+				ED623323159A395E006BA4FF /* Icon@2x.png in Resources */,
+				ED623325159A3960006BA4FF /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDC9861D15630FC100F4B74A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python localize.py --mainIdiom=en --mainStoryboard=Vosbox/en.lproj/MainStoryboard_iPhone.storyboard it\npython localize.py --mainIdiom=en --mainStoryboard=Vosbox/en.lproj/MainStoryboard_iPad.storyboard it";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED04DD151532549900E750BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED04DD2A1532549900E750BE /* main.m in Sources */,
+				ED04DD2E1532549900E750BE /* AppDelegate.m in Sources */,
+				ED04DD371532549900E750BE /* FirstViewController.m in Sources */,
+				ED04DD3E1532549900E750BE /* SecondViewController.m in Sources */,
+				ED9B1374153B05BC0075316B /* PlaylistViewController.m in Sources */,
+				ED0C39BA153F8809000336BC /* PlayerViewController.m in Sources */,
+				EDA65D191561868D00D06DD4 /* AudioStreamer.m in Sources */,
+				ED5A349C15878E8100F87C99 /* NSString+MD5.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED04DD261532549900E750BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED04DD271532549900E750BE /* en */,
+				EDC9861B15630E1500F4B74A /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ED04DD2F1532549900E750BE /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED04DD301532549900E750BE /* en */,
+				EDC9861A15630E1500F4B74A /* it */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		ED04DD321532549900E750BE /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED04DD331532549900E750BE /* en */,
+				EDC9861C15630E1500F4B74A /* it */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC986121563064400F4B74A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC986111563064400F4B74A /* en */,
+				EDC9861915630E1500F4B74A /* it */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED04DD431532549900E750BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED04DD441532549900E750BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED04DD461532549900E750BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vosbox/Vosbox-Prefix.pch";
+				INFOPLIST_FILE = "Vosbox/Vosbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ED04DD471532549900E750BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pasquale Del Cioppo (649R6YSYRM)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vosbox/Vosbox-Prefix.pch";
+				INFOPLIST_FILE = "Vosbox/Vosbox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C994FC1D-52C0-43E3-8D85-E4567C6A642C";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED04DD131532549900E750BE /* Build configuration list for PBXProject "Vosbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED04DD431532549900E750BE /* Debug */,
+				ED04DD441532549900E750BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED04DD451532549900E750BE /* Build configuration list for PBXNativeTarget "Vosbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED04DD461532549900E750BE /* Debug */,
+				ED04DD471532549900E750BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED04DD101532549900E750BE /* Project object */;
+}

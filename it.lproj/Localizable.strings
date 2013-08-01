@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  Vosbox
+
+  Created by Lorenzo Primiterra on 15/05/2012.
+  Copyright (c) 2012 K2 Technology. All rights reserved.
+*/
+
+//FirstViewController
+"Timeout" = "Timeout";
+"Connection timeout" = "Timeout della connessione";
+"Close" = "Chiudi";
+"Sorry!" = "Spiacenti!";
+"Search returned no results" = "Nessun risultato trovato";
+"Loading..." = "Caricamento...";
+
+//SecondViewController
+"Save / Load Playlist" = "Save / Load Playlist";
+"Cancel" = "Cancel";
+"Save Playlist" = "Save Playlist";
+"Load Playlist" = "Load Playlist";
+"More actions" = "More actions";
+"Shuffle Playlist" = "Shuffle Playlist";
+"Empty Playlist" = "Empty Playlist";
+"Share on Facebook" = "Share on Facebook";
+"Share on Twitter" = "Share on Twitter";
+"Playlist name" = "Playlist name";
+"Save" = "Save";
+"Playlist Saved" = "Playlist Saved";
+"OK" = "OK";
+"No name entered" = "No name entered";
+
+//PlaylistViewController
+"Name" = "Nome";
+
+//PlayerViewController
+"Nothing Playing" = "Nothing Playing";
+"Error" = "Error";
+"Playlist is empty" ="Playlist is empty";
+
+"You specified to use a custom server but you have entered no server address" = "You specified to use a custom server but you have entered no server address";

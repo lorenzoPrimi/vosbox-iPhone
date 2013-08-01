@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<dict>
+		<key>Item3</key>
+		<dict>
+			<key>Title</key>
+			<string>Metal- track one</string>
+			<key>Type</key>
+			<string>remote</string>
+			<key>Path</key>
+			<string>http://www.ragusa-auto.hr/images/fireItUp.mp3</string>
+			<key>Extension</key>
+			<string>mp3</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
